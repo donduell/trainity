@@ -36,7 +36,4 @@
     <style name="counterText">
         <item name="android:textColor">@color/colorSecondaryAccent</item>
     </style>
-
-    <color name="colorPrimaryBackground">#fff</color>
-    <color name="colorSecondary">#95d666</color>
 </resources>
