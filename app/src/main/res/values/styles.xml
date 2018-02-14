@@ -1,11 +1,42 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Base application theme. Don't use the default Theme Actionbar here, but the ThemeOverlay styles as defined below. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorPrimaryBackground</item>
+        <item name="android:colorBackground">@color/colorPrimaryBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:theme">@style/AppTheme.DarkOverlay</item>
     </style>
 
+    <!-- Secondary application theme. Extends the primary theme and overwrites certain properties. -->
+    <style name="AppTheme.Secondary" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
+        <item name="android:windowBackground">@color/colorSecondaryBackground</item>
+        <item name="android:colorBackground">@color/colorSecondaryBackground</item>
+    </style>
+
+    <!-- Here the ThemeOverlay themes for the ActionBar and Menu Popup are used to have the same material design on older Android versions. -->
+    <style name="AppTheme.DarkOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <!-- Title theme -->
+    <style name="AppTheme.TitleAppearance" parent="TextAppearance.AppCompat.Title" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="counterText">
+        <item name="android:textColor">@color/colorSecondaryAccent</item>
+    </style>
+
+    <color name="colorPrimaryBackground">#fff</color>
+    <color name="colorSecondary">#95d666</color>
 </resources>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Trainity.iml" filepath="$PROJECT_DIR$/Trainity.iml" />
+      <module fileurl="file://C:\Users\Sebastiaan\AndroidStudioProjects\trainity\Trainity.iml" filepath="C:\Users\Sebastiaan\AndroidStudioProjects\trainity\Trainity.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Sebastiaan\AndroidStudioProjects\trainity\app\app.iml" filepath="C:\Users\Sebastiaan\AndroidStudioProjects\trainity\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trainity.iml" filepath="$PROJECT_DIR$/trainity.iml" />
     </modules>
   </component>
 </project>
